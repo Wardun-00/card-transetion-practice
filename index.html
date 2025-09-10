@@ -10,14 +10,23 @@
       href="./assets/favicon-removebg-preview.png"
       type="image/x-icon"
     />
-    <!-- tailwind cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- dasyUi cdn-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <!-- css link -->
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -25,7 +34,7 @@
   <!-- body section -->
   <body>
     <!-- header nav section -->
-    <header class="p-2">
+    <!-- <header class="p-3 max-w-[1280px] mx-auto">
       <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
           <div class="dropdown">
@@ -77,29 +86,104 @@
               />
             </svg>
           </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+        </div>
+      </div>
+    </header> -->
+
+    <!-- header normal -->
+    <header
+      class="max-w-[1920px] mx-auto flex justify-between p-3 rounded-3xl shadow-lg bg-white"
+    >
+      <div>
+        <img src="./assets/fulllogo.png" alt="logo " class="w-80" />
+      
+          <div class="flex gap-5">
+            <a href=""><img src="./assets/facebook (2).png" alt="fb" /></a>
+            <a href=""><img src="./assets/twitter.png" alt="twitter" /></a>
+            <a href=""><img src="/assets/social-media.png" alt="insta" /></a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="relative">
+          <input
+            type="search"
+             class="rounded-2xl border w-48 h-9 px-3
+             transition-all duration-500 ease-in-out
+             hover:w-80 hover:border-2 hover:border-sky-600"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass text-gray-400 right-2 top-3 absolute"
+          ></i>
+        </div>
+
+        <div class="dropdown dropdown-hover">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn m-1 hover:bg-black rounded-xl hover:text-white"
+          >
+            Menu
+          </div>
+          <ul
+            tabindex="0"
+            class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+          >
+            <li class="hover:bg-black hover:text-white"><a>Home</a></li>
+            <li class="hover:bg-black hover:text-white"><a>Details</a></li>
+          </ul>
         </div>
       </div>
     </header>
-
+    
     <!-- main section -->
+    <main>
+        <div class="max-w-[680px]  mx-auto ">
+          <marquee behavior="scroll" direction="up" scrollamount="3">
+        <p class="text-[12px] h-8">  আমাদের রয়েছে অত্যাধুনিক মাল্টিমিডিয়া ক্লাসরুম, দেশ-সেরা শিক্ষক, ১০০% জব প্লেসেমেন্ট সাপোর্ট ও ক্যারিয়ার কাউন্সিলর
+     </p>
+     </marquee>
+     </div>
+       
+      <!-- hero section -->
+      <section class="max-w-[1900px] mx-auto mt-6 rounded-xl">
+        <!-- parent div -->
+        <div class="flex flex-col justify-between md:flex-row gap-5">
+          <!--hero child-1 -->
+          <div
+            class="md:p-10 p-5text-center md:w-1/2 bg-sky-100 rounded-r-full rounded-l-xl"
+          >
+            <h1 class="text-2xl md:text-4xl font-bold">
+              পিপলএনটেক ইনস্টিটিউট
+              <span class="text-sky-500">পলিটেকনিক প্রোগ্রাম</span>
+            </h1>
+
+            <p class="mt-5 md:mt-11 text-base text-gray-600">
+              বিগত ০৮ বছর ধরে হাজারো পলিটেকনিক শিক্ষার্থীকে ইন্ডাস্ট্রিয়াল
+              এটাচমেন্টের ট্রেনিং এর অভিজ্ঞতা নিয়ে আমরা গড়ে তুলছি হাজারো সফল
+              শিক্ষার্থীদের। যারা দেশে-বিদেশে চাকরি ও ফ্রিল্যান্সিং করে গড়ে
+              তুলেছে নিজেদের ক্যারিয়ার। আমাদের রয়েছে অত্যাধুনিক মাল্টিমিডিয়া
+              ক্লাসরুম, দেশ-সেরা শিক্ষক, ১০০% জব প্লেসেমেন্ট সাপোর্ট ও ক্যারিয়ার
+              কাউন্সিলর। যাতে সকল শিক্ষার্থী পাবে ক্যারিয়ার গড়ার সমান সুযোগ।
+            </p>
+          </div>
+          <!-- hero child 2 -->
+
+          <div class="bg-gray-100 border-gray-400 shadow-slate-700 rounded-xl">
+            <img
+              src="./assets/hero01.jpg"
+              alt="heroImg"
+              class="p-4 w-full h-full shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- our team section -->
+       <section class="border-2 max-w-[1920px] mx-auto mt-10">
+        <h1 class="text-8xl font-bold text-center">Our <span class="text-sky-600">Team</span></h1>
+       </section>
+    </main>
   </body>
 </html>
